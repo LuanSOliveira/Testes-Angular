@@ -14,7 +14,7 @@ interface IPessoas {
 export class NgForComponent {
   
   endereco: string = '../../../../assets/ngFor.pdf'
-  github: string = 'https://github.com/LuanSOliveira'
+  github: string = 'https://github.com/LuanSOliveira/Testes-Angular/tree/main/src/app/modules/diretivas/components/ng-for'
 
   pessoas: IPessoas[] = [
     {nome: 'João', numero: "1"},

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class NgIfElseComponent {
 
   endereco: string = '../../../../assets/ngIfElse.pdf'
-  github: string = 'https://github.com/LuanSOliveira'
+  github: string = 'https://github.com/LuanSOliveira/Testes-Angular/tree/main/src/app/modules/diretivas/components/ng-if-else'
 
   condicao: boolean = true
 

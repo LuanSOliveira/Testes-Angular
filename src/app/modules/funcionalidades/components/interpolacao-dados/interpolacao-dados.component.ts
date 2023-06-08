@@ -12,6 +12,6 @@ export class InterpolacaoDadosComponent {
   terceira: string = 'José'
 
   endereco: string = '../../../../assets/InterpolacaoDeDados.pdf'
-  github: string = 'https://github.com/LuanSOliveira'
+  github: string = 'https://github.com/LuanSOliveira/Testes-Angular/tree/main/src/app/modules/funcionalidades/components/interpolacao-dados'
 
 }
