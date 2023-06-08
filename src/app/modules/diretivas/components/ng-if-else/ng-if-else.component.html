@@ -1,0 +1,22 @@
+<div class="div-componente">
+    <h2 class="title-componente">*ngIf (Utilizando o "Else")</h2>
+    <div class="componente-container">
+        <p class="descricao-componente">
+            A diretiva "ngIf" também pode ser utilizada com a expressão "Else" que irá renderizar um "ng-template" caso a condição inicial do "ngIf" não 
+            seja "true".
+        </p>
+    </div>
+    <div class="componente-exemplo">
+        <div class="box-condicao">
+            <p class="texto-condicao-verdadeira" *ngIf="condicao ; else condicaoFalsa">Condição Verdadeira</p>
+            <ng-template #condicaoFalsa>
+                <p class="texto-condicao-falsa">Condição Falsa</p>
+            </ng-template>
+        </div>
+        <button (click)="AlterarCondicao()" class="button-condicao">Mudar Condição</button>
+    </div>
+    <div class="componente-buttons-container">
+        <app-arquivo-pdf [endereco]="endereco"></app-arquivo-pdf>
+        <app-repositorio [github]="github"></app-repositorio>
+    </div>
+</div>

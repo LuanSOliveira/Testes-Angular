@@ -1,0 +1,15 @@
+@import '../../../../../scss/variables.scss';
+
+.propriedades-filho-container{
+    background: $background-cards-padrao;
+    width: 50%;
+    padding: 1rem;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+
+    .propriedades-filho-descricao{
+        margin: 0;
+    }
+}

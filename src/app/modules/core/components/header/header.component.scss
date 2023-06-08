@@ -1,0 +1,13 @@
+@import '../../../../../scss/variables.scss';
+
+.header-container{
+    background: $background-padrao;
+    color: #fff;
+    padding: 2rem 1rem;
+
+    &-title{
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0;
+    }
+}

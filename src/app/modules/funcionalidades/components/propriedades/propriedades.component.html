@@ -1,0 +1,19 @@
+<div class="div-componente">
+    <h2 class="title-componente">Propriedades</h2>
+    <div class="componente-container">
+        <p class="descricao-componente">
+            A utilização de propriedades é um recurso utilizado entre componentes onde o componente pai passa um valor para o componente filho.
+            Neste exemplo o componente "Pai" está passando o valor do nome do filho para o componente "filho" renderizar.
+        </p>
+    </div>
+    <div class="componente-exemplo">
+        <div class="propriedade-pai">
+            <p>Eu sou o componente pai e o nome do meu filho é: {{nomeFilho}}</p>
+            <app-propriedades-filho [nome]="nomeFilho"></app-propriedades-filho>
+        </div>
+    </div>
+    <div class="componente-buttons-container">
+        <app-arquivo-pdf [endereco]="endereco"></app-arquivo-pdf>
+        <app-repositorio [github]="github"></app-repositorio>
+    </div>
+</div>

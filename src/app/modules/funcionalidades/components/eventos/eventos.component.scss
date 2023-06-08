@@ -1,0 +1,14 @@
+.botao-evento{
+    font-size: 25px;
+    background: rgb(82, 5, 5);
+    color:#fff;
+    border: none;
+    border-radius: 15px;
+    padding: 0.7rem;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+    cursor: pointer;
+
+    &:hover{
+        background: rgb(131, 9, 9);
+    }
+}

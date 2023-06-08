@@ -1,0 +1,15 @@
+<section class="diretivas-container">
+    <mat-drawer-container class="drawer-container" autosize>
+        <mat-drawer #drawer class="sidenav" mode="over">
+            <app-navbar></app-navbar>
+        </mat-drawer>      
+        <div class="content">
+          <button class="menu-button" type="button" mat-button (click)="drawer.toggle()">
+            <mat-icon fontIcon="menu"></mat-icon>
+          </button>
+        </div>
+        <app-ng-if></app-ng-if>
+        <app-ng-if-else></app-ng-if-else>
+        <app-ng-for></app-ng-for>
+      </mat-drawer-container>
+</section>

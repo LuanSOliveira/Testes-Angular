@@ -1,0 +1,19 @@
+<section class="home-container">
+    <mat-drawer-container class="drawer-container" autosize>
+        <mat-drawer #drawer class="sidenav" mode="over">
+            <app-navbar></app-navbar>
+        </mat-drawer>      
+        <div class="content">
+          <button class="menu-button" type="button" mat-button (click)="drawer.toggle()">
+            <mat-icon fontIcon="menu"></mat-icon>
+          </button>
+          <h2 class="title">Bem vindo ao projeto de testes Angular!</h2>
+          <h3 class="description">
+              Este projeto foi criado com o objetivo de testar e mostrar como utilizar as funcionalidades do Angular.
+          </h3>
+          <h3 class="description">
+              Utilize o menu lateral para navegar nas opções de teste.
+          </h3>
+        </div>      
+      </mat-drawer-container>
+</section>

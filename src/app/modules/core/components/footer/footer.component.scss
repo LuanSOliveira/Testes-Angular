@@ -1,0 +1,13 @@
+@import '../../../../../scss/variables.scss';
+
+.footer-container{
+    background: $background-padrao;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+
+    h2{
+        font-size: 28px;
+        margin: 0;
+    }
+}

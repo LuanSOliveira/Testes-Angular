@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import './scss/variables.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.div-componente{
+    padding: 1rem 0 2rem 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px dashed rgb(129, 37, 37);
+    
+    .title-componente{
+        margin-bottom: 2rem;
+        font-size: 40px;
+    }
+    
+    .componente-container{
+        margin-bottom: 2rem;
+        font-size: 25px;
+
+        .descricao-componente{
+            line-height: 28px;
+        }
+    }
+    
+    .componente-exemplo{
+        font-size: 25px;
+    }
+    
+    .componente-buttons-container{
+        width: 300px;
+        margin-top: 20px;
+    }
+}
+
+

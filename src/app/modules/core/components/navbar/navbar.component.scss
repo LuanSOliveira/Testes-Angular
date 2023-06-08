@@ -1,0 +1,32 @@
+@import '../../../../../scss/variables.scss';
+
+.navbar-container{
+    background: $background-navbar;
+    height: 100%;
+    
+    .navbar-lista{
+        list-style: none;
+        padding: 1rem;
+
+        .navbar-titulo{
+            margin-bottom: 25px;
+            color: #fff;
+            font-size: 32px;
+        }
+
+        .navbar-item{
+            margin-bottom: 10px;
+
+            .link{
+                text-decoration: none;
+                color: #000;
+                font-size: 24px;
+                color: #d6d6d6;
+
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

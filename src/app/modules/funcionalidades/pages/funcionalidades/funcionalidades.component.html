@@ -1,0 +1,15 @@
+<section class="funcionalidades-container">
+    <mat-drawer-container class="drawer-container" autosize>
+        <mat-drawer #drawer class="sidenav" mode="over">
+            <app-navbar></app-navbar>
+        </mat-drawer>      
+        <div class="content">
+          <button class="menu-button" type="button" mat-button (click)="drawer.toggle()">
+            <mat-icon fontIcon="menu"></mat-icon>
+          </button>
+        </div>      
+        <app-interpolacao-dados></app-interpolacao-dados>
+        <app-propriedades></app-propriedades>
+        <app-eventos></app-eventos>
+      </mat-drawer-container>
+</section>

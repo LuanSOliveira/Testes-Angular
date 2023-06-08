@@ -1,0 +1,20 @@
+<div class="div-componente">
+    <h2 class="title-componente">Interpolação de dados</h2>
+    <div class="componente-container">
+        <p class="descricao-componente">
+            A interpolação de dados permite carregar os valores de variáveis no HTML. No exemplo a seguir os valores dos nomes estão sendo importado de 
+            variáveis do arquivo ".ts" do componente.
+        </p>
+    </div>
+    <div class="componente-exemplo">
+        <ul class="exemplo-lista">
+            <li class="exemplo-lista-item">Nome: {{primeira}}</li>
+            <li class="exemplo-lista-item">Nome: {{segunda}}</li>
+            <li class="exemplo-lista-item">Nome: {{terceira}}</li>
+        </ul>
+    </div>
+    <div class="componente-buttons-container">
+        <app-arquivo-pdf [endereco]="endereco"></app-arquivo-pdf>
+        <app-repositorio [github]="github"></app-repositorio>
+    </div>
+</div>

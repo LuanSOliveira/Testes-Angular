@@ -1,0 +1,22 @@
+<div class="div-componente">
+    <h2 class="title-componente">*ngFor (Renderização de listas)</h2>
+    <div class="componente-container">
+        <p class="descricao-componente">
+            Com a diretiva "ngFor" podemos iterar sobre um array e renderizar elementos de acordo com a quantidade de itens desse array. Também podemos nos utilizar
+            dos valores dos elementos desse array com a INTERPOLAÇÃO DE DADOS. No exemplo a seguir estamos renderizando um card para cada elemento do array "pessoas"
+            e renderizando as informações dinamicamente com os valores dos elementos.
+        </p>
+    </div>
+    <div class="componente-exemplo">
+        <ul class="lista-pessoas">
+            <li class="card-pessoa" *ngFor="let pessoa of pessoas">
+                <p class="informacao-pessoa">Nome: {{pessoa.nome}}</p>
+                <p class="informacao-pessoa">Número: {{pessoa.numero}}</p>
+            </li>
+        </ul>
+    </div>
+    <div class="componente-buttons-container">
+        <app-arquivo-pdf [endereco]="endereco"></app-arquivo-pdf>
+        <app-repositorio [github]="github"></app-repositorio>
+    </div>
+</div>

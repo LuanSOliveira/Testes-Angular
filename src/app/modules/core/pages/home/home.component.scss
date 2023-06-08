@@ -1,0 +1,31 @@
+@import '../../../../../scss/variables.scss';
+
+.home-container{
+    height: 100%;
+
+    .drawer-container{
+        background: $background-secundario;
+        height: 100%;
+        width: 100%;
+
+        .content{
+            padding: .5rem;
+
+            .menu-button{
+                cursor: pointer;
+            }
+
+            .title{
+                padding-top: 1rem;
+                margin-bottom: 2rem;
+                font-size: 40px;
+            }
+
+            .description{
+                margin: 0;
+                font-size: 20px;
+            }
+        }
+    }
+}
+  

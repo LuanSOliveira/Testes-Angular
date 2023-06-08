@@ -1,0 +1,19 @@
+<div class="div-componente">
+    <h2 class="title-componente">*ngIf (Renderização Condicional)</h2>
+    <div class="componente-container">
+        <p class="descricao-componente">
+            A diretiva "ngIf" é responsável por gerar a renderização condicional das tags html. No exemplo a seguir o texto "Condição Verdadeira" só será apresentado
+            quando o valor da variável "condicao" for "true". O evento de "click" no botão executa uma função que altera o valor da variável "condicao".
+        </p>
+    </div>
+    <div class="componente-exemplo">
+        <div class="box-condicao">
+            <p class="texto-condicao" *ngIf="condicao">Condição Verdadeira</p>
+        </div>
+        <button (click)="AlterarCondicao()" class="button-condicao">Mudar Condição</button>
+    </div>
+    <div class="componente-buttons-container">
+        <app-arquivo-pdf [endereco]="endereco"></app-arquivo-pdf>
+        <app-repositorio [github]="github"></app-repositorio>
+    </div>
+</div>
