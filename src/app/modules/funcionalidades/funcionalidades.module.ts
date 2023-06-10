@@ -10,6 +10,7 @@ import { CoreModule } from '../core/core.module';
 import { PropriedadesComponent } from './components/propriedades/propriedades.component';
 import { PropriedadesFilhoComponent } from './components/propriedades-filho/propriedades-filho.component';
 import { EventosComponent } from './components/eventos/eventos.component';
+import { ServicosComponent } from './components/servicos/servicos.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { EventosComponent } from './components/eventos/eventos.component';
     InterpolacaoDadosComponent,
     PropriedadesComponent,
     PropriedadesFilhoComponent,
-    EventosComponent
+    EventosComponent,
+    ServicosComponent
   ],
   imports: [
     CommonModule,

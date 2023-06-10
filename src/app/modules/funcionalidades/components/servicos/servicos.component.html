@@ -1,0 +1,21 @@
+<div class="div-componente">
+    <h2 class="title-componente">Serviços</h2>
+    <div class="componente-container">
+        <p class="descricao-componente">
+            Os serviços são responsáveis por fazer o tratamento de dados e entregá-los já prontos para que o componente disponibilize para renderização.
+            Neste exemplo, os valores dos nomes estão sendo tratados pelo arquivo de serviço e estamos importando os métodos no arquivo ".ts" do componente
+            para que sejam atribuídos em variáveis e renderizados no html.
+        </p>
+    </div>
+    <div class="componente-exemplo">
+        <ul class="exemplo-lista">
+            <li class="exemplo-lista-item">Nome: {{lista[0]}}</li>
+            <li class="exemplo-lista-item">Nome: {{lista[1]}}</li>
+            <li class="exemplo-lista-item">Nome: {{lista[2]}}</li>
+        </ul>     
+    </div>
+    <div class="componente-buttons-container">
+        <app-arquivo-pdf [endereco]="endereco"></app-arquivo-pdf>
+        <app-repositorio [github]="github"></app-repositorio>
+    </div>
+</div>
