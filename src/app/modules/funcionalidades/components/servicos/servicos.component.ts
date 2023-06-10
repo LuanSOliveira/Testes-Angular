@@ -10,7 +10,7 @@ export class ServicosComponent implements OnInit {
 
   lista: string[] = []
 
-  endereco: string = '../../../../assets/Servicos.pdf'
+  endereco: string = '../../../../assets/Serviços.pdf'
   github: string = 'https://github.com/LuanSOliveira/Testes-Angular/tree/main/src/app/modules/funcionalidades/components/servicos'
 
   constructor(private servicoService: ServicosService) {}
