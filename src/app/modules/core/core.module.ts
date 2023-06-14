@@ -11,6 +11,7 @@ import { ArquivoPdfComponent } from './components/arquivo-pdf/arquivo-pdf.compon
 import { RepositorioComponent } from './components/repositorio/repositorio.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { DescricaoComponenteComponent } from './components/descricao-componente/descricao-componente.component';
+import { ScrollTopComponent } from './components/scroll-top/scroll-top.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { DescricaoComponenteComponent } from './components/descricao-componente/
     RepositorioComponent,
     NavbarComponent,
     DescricaoComponenteComponent,
+    ScrollTopComponent,
   ],
   imports: [
     CommonModule,
@@ -34,7 +36,8 @@ import { DescricaoComponenteComponent } from './components/descricao-componente/
     ArquivoPdfComponent,
     RepositorioComponent,
     NavbarComponent,
-    DescricaoComponenteComponent
+    DescricaoComponenteComponent,
+    ScrollTopComponent
   ]
 })
 export class CoreModule { }
