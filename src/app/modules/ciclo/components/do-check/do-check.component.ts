@@ -10,7 +10,7 @@ export class DoCheckComponent implements DoCheck {
   nome:string = 'João'
 
   endereco: string = '../../../../assets/DoCheck.pdf'
-  github: string = 'https://github.com/LuanSOliveira/Testes-Angular/tree/main/src/app/modules/diretivas/components/do-check'
+  github: string = 'https://github.com/LuanSOliveira/Testes-Angular/tree/main/src/app/modules/ciclo/components/do-check'
 
   ngDoCheck(): void {
     console.log('nome alterado - DoCheck');    

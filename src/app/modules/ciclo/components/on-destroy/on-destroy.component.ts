@@ -13,7 +13,7 @@ interface IPessoas {
 export class OnDestroyComponent {
 
   endereco: string = '../../../../assets/OnDestroy.pdf'
-  github: string = 'https://github.com/LuanSOliveira/Testes-Angular/tree/main/src/app/modules/diretivas/components/on-destroy'
+  github: string = 'https://github.com/LuanSOliveira/Testes-Angular/tree/main/src/app/modules/ciclo/components/on-destroy'
 
   pessoas: IPessoas[] = [
     {nome: 'João', numero: "1"},

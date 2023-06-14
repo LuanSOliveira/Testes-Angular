@@ -10,7 +10,7 @@ export class OnInitComponent implements OnInit {
   nome:string = ''
 
   endereco: string = '../../../../assets/OnInit.pdf'
-  github: string = 'https://github.com/LuanSOliveira/Testes-Angular/tree/main/src/app/modules/diretivas/components/on-init'
+  github: string = 'https://github.com/LuanSOliveira/Testes-Angular/tree/main/src/app/modules/ciclo/components/on-init'
 
   ngOnInit(): void {
     this.nome = 'João'
