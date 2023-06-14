@@ -1,0 +1,26 @@
+@import '../../../../../scss/variables.scss';
+
+.componente-exemplo{
+    .do-check-texto{
+        background: $background-cards-padrao;
+        color: #fff;
+        padding: 1rem;
+        width: 100px;
+        text-align: center;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+    }
+    .do-check-button{
+        cursor: pointer;
+        margin-top: 10px;
+        font-size: 25px;
+        padding: .5rem;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+        &:hover{
+            background: #fff;
+        }
+    }
+}

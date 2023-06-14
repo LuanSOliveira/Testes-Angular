@@ -1,0 +1,17 @@
+<div class="div-componente">
+    <h2 class="title-componente">OnInit</h2>
+    <div class="componente-container">
+        <p class="descricao-componente">
+            Esse método é chamado assim que o Angular inicializa o componente após ter resolvido todas as dependências de injeção. É usado para executar
+            a lógica de inicialização do componente, como buscar dados iniciais de um serviço. No exemplo a seguir, estamos rederizando na tag "p" a variável
+            "nome". Esta variavel é inicializada com um valor vazio, mas no método "OnInit" estamos atribuindo um valor para que seja renderizado.
+        </p>
+    </div>
+    <div class="componente-exemplo">
+        <p class="on-init-texto">{{nome}}</p>
+    </div>
+    <div class="componente-buttons-container">
+        <app-arquivo-pdf [endereco]="endereco"></app-arquivo-pdf>
+        <app-repositorio [github]="github"></app-repositorio>
+    </div>
+</div>

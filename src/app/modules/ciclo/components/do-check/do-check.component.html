@@ -1,0 +1,19 @@
+<div class="div-componente">
+    <h2 class="title-componente">DoCheck</h2>
+    <div class="componente-container">
+        <p class="descricao-componente">
+            O método "DoCheck" é chamado durante cada ciclo de detecção de alterações do Angular. Ele é usado para detecção manual de alterações que
+            o Angular não consegue detectar automaticamente. Tenha cuidado ao usá-lo, pois pode afetar o desempenho do aplicativo se não for
+            usado corretamente. No exemplo a seguir, o método "DoCheck" será executado sempre que houver qualquer alteração no componente raiz ou no
+            componente pai e será impresso no console. Diferente do "OnChanges" a alteração não precisa ser específica de um "Input"
+        </p>
+    </div>
+    <div class="componente-exemplo">
+        <p class="do-check-texto">{{nome}}</p>
+        <button class="do-check-button" (click)="mudarNome()">Mudar Nome</button>
+    </div>
+    <div class="componente-buttons-container">
+        <app-arquivo-pdf [endereco]="endereco"></app-arquivo-pdf>
+        <app-repositorio [github]="github"></app-repositorio>
+    </div>
+</div>

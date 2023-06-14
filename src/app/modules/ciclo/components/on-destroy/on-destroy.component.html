@@ -1,0 +1,24 @@
+<div class="div-componente">
+    <h2 class="title-componente">OnDestroy</h2>
+    <div class="componente-container">
+        <p class="descricao-componente">
+            Esse método é chamado antes de um componente ser destruído. É usado para executar qualquer lógica de limpeza necessária, como
+            cancelar assinaturas de observáveis, desligar temporizadores ou liberar recursos. Neste exemplo, quando removemos um item da lista,
+            o componente filho "on-destroy-card" executa a ação do método "OnDestroy" e imprime no console.
+        </p>
+    </div>
+    <div class="componente-exemplo">
+        <ul class="lista-pessoas">
+            <li class="card-pessoa" *ngFor="let pessoa of pessoas">
+                <app-on-destroy-card [nome]="pessoa.nome" [numero]="pessoa.numero"></app-on-destroy-card>
+            </li>
+        </ul>
+        <button class="deletar-pessoa" (click)="deletarPessoa()">Deletar Última Pessoa</button>
+        <button class="resetar-pessoa" (click)="resetarPessoa()">Resetar Lista</button>
+    </div>
+    <div class="componente-buttons-container">
+        <app-arquivo-pdf [endereco]="endereco"></app-arquivo-pdf>
+        <app-repositorio [github]="github"></app-repositorio>
+    </div>
+</div>
+

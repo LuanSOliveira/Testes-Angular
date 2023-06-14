@@ -1,0 +1,33 @@
+<section class="ciclo-container">
+    <mat-drawer-container class="drawer-container" autosize>
+        <mat-drawer #drawer class="sidenav" mode="over">
+            <app-navbar></app-navbar>
+        </mat-drawer>      
+        <div class="content">
+          <button class="menu-button" type="button" mat-button (click)="drawer.toggle()">
+            <mat-icon fontIcon="menu"></mat-icon>
+          </button>
+        </div>
+        <div class="div-componente">
+            <h2 class="title-componente">OnChanges</h2>
+            <div class="componente-container">
+                <p class="descricao-componente">
+                    O método "OnChanges" é chamado quando um valor de entrada de um componente é alterado. Ele recebe um objeto SimpleChanges que contém
+                    informações sobre as alterações nos valores dos inputs. No exemplo a seguir, ao clicar no botão "Mudar Nome", será executado o "OnChanges"
+                    do componente e será impresso no console a mensagem informando que o nome foi alterado.
+                </p>
+            </div>
+            <div class="componente-exemplo">
+                <app-on-changes [nome]="nomeOnChanges"></app-on-changes>
+                <button (click)="mudarNome()" class="on-changes-button">Mudar nome</button>
+            </div>
+            <div class="componente-buttons-container">
+                <app-arquivo-pdf [endereco]="enderecoOnChanges"></app-arquivo-pdf>
+                <app-repositorio [github]="githubOnChanges"></app-repositorio>
+            </div>
+        </div>
+        <app-on-init></app-on-init>
+        <app-do-check></app-do-check>
+        <app-on-destroy></app-on-destroy>
+    </mat-drawer-container>
+</section>
