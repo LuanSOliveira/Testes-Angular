@@ -1,0 +1,11 @@
+.descricao-comp-container{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+    .descricao-comp-titulo{
+        font-size: 50px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}

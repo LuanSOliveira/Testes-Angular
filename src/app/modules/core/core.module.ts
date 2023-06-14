@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ArquivoPdfComponent } from './components/arquivo-pdf/arquivo-pdf.component';
 import { RepositorioComponent } from './components/repositorio/repositorio.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { DescricaoComponenteComponent } from './components/descricao-componente/descricao-componente.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ArquivoPdfComponent,
     RepositorioComponent,
     NavbarComponent,
+    DescricaoComponenteComponent,
   ],
   imports: [
     CommonModule,
@@ -31,7 +33,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     FooterComponent,
     ArquivoPdfComponent,
     RepositorioComponent,
-    NavbarComponent
+    NavbarComponent,
+    DescricaoComponenteComponent
   ]
 })
 export class CoreModule { }
