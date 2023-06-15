@@ -1,0 +1,18 @@
+<section class="diretivas-container">
+    <mat-drawer-container class="drawer-container" autosize>
+        <mat-drawer #drawer class="sidenav" mode="over">
+            <app-navbar></app-navbar>
+        </mat-drawer>      
+        <div class="content">
+          <button class="menu-button" type="button" mat-button (click)="drawer.toggle()">
+            <mat-icon fontIcon="menu"></mat-icon>
+          </button>
+        </div>
+        <app-descricao-componente [titulo]="'VALIDAÇÃO DE FORMULÁRIO'"></app-descricao-componente>
+        <app-ng-form></app-ng-form>
+        <app-ng-model></app-ng-model>
+        <app-required></app-required>
+        <app-alerta-visual></app-alerta-visual>
+        <app-scroll-top></app-scroll-top>
+      </mat-drawer-container>
+</section>

@@ -1,0 +1,23 @@
+<div class="div-componente">
+    <h2 class="title-componente">ngForm</h2>
+    <div class="componente-container">
+        <p class="descricao-componente">
+            A diretiva "ngForm"é usada para criar um formulário no Angular e gerenciar sua interação com o componente, fornecendo funcionalidades de
+            validação e rastreamento de estado. Neste exemplo temos um formulário instanciado que, quando submetido, apresenta no console as informações
+            enviadas pela diretiva "ngForm".
+        </p>
+    </div>
+    <div class="componente-exemplo">
+        <form class="formulario-exemplo" #formDir="ngForm" (ngSubmit)="enviarFormulario(formDir)">
+            <div class="intens-formulario">
+                <input type="text" placeholder="Digite um nome" class="input-texto">
+                <button class="botao-enviar">Enviar</button>
+            </div>
+        </form>
+
+    </div>
+    <div class="componente-buttons-container">
+        <app-arquivo-pdf [endereco]="endereco"></app-arquivo-pdf>
+        <app-repositorio [github]="github"></app-repositorio>
+    </div>
+</div>

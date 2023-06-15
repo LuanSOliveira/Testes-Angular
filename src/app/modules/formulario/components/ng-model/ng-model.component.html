@@ -1,0 +1,29 @@
+<div class="div-componente">
+    <h2 class="title-componente">ngModel</h2>
+    <div class="componente-container">
+        <p class="descricao-componente">
+            A diretiva "ngModel" é usada para vincular os campos que serão validados ao formulário, ele é referenciado junto a propriedade "name" da tag
+            que foi atribuído. Neste exemplo, a tag "input" está recebendo o "name" de "textoNome" e a diretiva "ngModel" para que quando o formulário
+            for submetido, seja impresso no console as informações dos campos que estão sendo controlados pelo "formDir". Ou seja, os campos com o "ngModel".
+        </p>
+    </div>
+    <div class="componente-exemplo">
+        <form class="formulario-exemplo" #formDir="ngForm" (ngSubmit)="enviarFormulario(formDir)">
+            <div class="intens-formulario">
+                <input 
+                    type="text" 
+                    placeholder="Digite um nome" 
+                    class="input-texto"
+                    name="textoNome"
+                    ngModel
+                >
+                <button class="botao-enviar">Enviar</button>
+            </div>
+        </form>
+
+    </div>
+    <div class="componente-buttons-container">
+        <app-arquivo-pdf [endereco]="endereco"></app-arquivo-pdf>
+        <app-repositorio [github]="github"></app-repositorio>
+    </div>
+</div>

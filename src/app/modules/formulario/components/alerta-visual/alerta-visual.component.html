@@ -1,0 +1,43 @@
+<div class="div-componente">
+    <h2 class="title-componente">Alerta Visual</h2>
+    <div class="componente-container">
+        <p class="descricao-componente">
+            Podemos apresentar alertas visuais para os campos que exigem algum tipo de validação, como "required". No exemplo a seguir, vamos adicionar
+            um alerta para o usuário quando o campo "input" for tocado ou alterado. Também vamos adicionar a diretiva "minlength" para adicinar uma
+            validação de quantidade mínima de caractéres.
+        </p>
+    </div>
+    <div class="componente-exemplo">
+        <form class="formulario-exemplo" #formDir="ngForm" (ngSubmit)="enviarFormulario(formDir)">
+            <div class="intens-formulario">
+                <input 
+                    type="text" 
+                    placeholder="Digite um nome" 
+                    class="input-texto"
+                    name="textoNome"
+                    ngModel
+                    required
+                    minlength="5"
+                >
+                <div 
+                    class="alerta-container" 
+                    *ngIf="(formDir.controls['textoNome']?.invalid && formDir.controls['textoNome']?.touched) || formDir.controls['textoNome']?.dirty"
+                >
+                    <span class="alerta" *ngIf="formDir.controls['textoNome']?.errors?.['required']">
+                        *O Campo deve ser preenchido.
+                    </span>
+                    <span class="alerta" *ngIf="formDir.controls['textoNome']?.errors?.['minlength']">
+                        *O texto deve ter no mínimo 5 caracteres.
+                    </span>
+                </div>
+                <button class="botao-enviar">Enviar</button>
+            </div>
+        </form>
+
+    </div>
+    <div class="componente-buttons-container">
+        <app-arquivo-pdf [endereco]="endereco"></app-arquivo-pdf>
+        <app-repositorio [github]="github"></app-repositorio>
+    </div>
+</div>
+

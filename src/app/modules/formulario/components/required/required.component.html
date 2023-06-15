@@ -1,0 +1,29 @@
+<div class="div-componente">
+    <h2 class="title-componente">Required</h2>
+    <div class="componente-container">
+        <p class="descricao-componente">
+            A diretiva "required" é usada para tornar um campo do formulário como obrigatório. Ou seja, caso o campo não tenha um valor, o valor de
+            “valid” para o formulário será “false”.
+        </p>
+    </div>
+    <div class="componente-exemplo">
+        <form class="formulario-exemplo" #formDir="ngForm" (ngSubmit)="enviarFormulario(formDir)">
+            <div class="intens-formulario">
+                <input 
+                    type="text" 
+                    placeholder="Digite um nome" 
+                    class="input-texto"
+                    name="textoNome"
+                    ngModel
+                    required
+                >
+                <button class="botao-enviar">Enviar</button>
+            </div>
+        </form>
+
+    </div>
+    <div class="componente-buttons-container">
+        <app-arquivo-pdf [endereco]="endereco"></app-arquivo-pdf>
+        <app-repositorio [github]="github"></app-repositorio>
+    </div>
+</div>
