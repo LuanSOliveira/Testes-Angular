@@ -1,0 +1,22 @@
+<div class="div-componente">
+    <h2 class="title-componente">Requisição HTTP</h2>
+    <div class="componente-container">
+        <p class="descricao-componente">
+            Utilizamos as requisições HTTP para realizar interações com um API. No exemplo a seguir estamos executando uma consulta de uma API ao clicar
+            no botão "Buscar". Desta forma será renderizado um card para cada resultado retornado pela API.
+        </p>
+    </div>
+    <div class="componente-exemplo">
+        <button class="botao-exemplo" (click)="buscarPessoas()">Buscar</button>
+        <div class="exemplo-cards-container">
+            <div class="card-exemplo" *ngFor="let pessoa of pessoas">
+                <img class="pessoa-imagem" src={{pessoa.icone}} alt="Icone da Pessoa">
+                <p class="pessoa-nome">Nome: {{pessoa.nome}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="componente-buttons-container">
+        <app-arquivo-pdf [endereco]="endereco"></app-arquivo-pdf>
+        <app-repositorio [github]="github"></app-repositorio>
+    </div>
+</div>

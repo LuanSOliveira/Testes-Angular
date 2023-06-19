@@ -11,6 +11,7 @@ import { PropriedadesComponent } from './components/propriedades/propriedades.co
 import { PropriedadesFilhoComponent } from './components/propriedades-filho/propriedades-filho.component';
 import { EventosComponent } from './components/eventos/eventos.component';
 import { ServicosComponent } from './components/servicos/servicos.component';
+import { RequisicaoHttpComponent } from './components/requisicao-http/requisicao-http.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ServicosComponent } from './components/servicos/servicos.component';
     PropriedadesComponent,
     PropriedadesFilhoComponent,
     EventosComponent,
-    ServicosComponent
+    ServicosComponent,
+    RequisicaoHttpComponent
   ],
   imports: [
     CommonModule,
